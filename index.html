@@ -3,49 +3,53 @@
   <head>
     <meta charset="utf-8">
     <title>Марафон Заверстаю-2021</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <header class="site-header">
-        <nav class="site-menu">
-          <ul class="menu-list">
-            <li>
-              <a href="#">Каталог</a>
-            </li>
-            <li>
-              <a href="#">Доставка и оплата</a>
-            </li>
-            <li>
-              <a href="#">Отзывы</a>
-            </li>
-            <li class="menu-logo">
-              <a href="#">
-                <img src="img/menu-logo.svg" alt="Логотип компании" width="100" height="32">
-              </a>
-            </li>
-            <li>
-              <a href="#">Спецпредложения</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-            <li>
-              <a href="#">Корзина</a>
-            </li>
-          </ul>
-        </nav> 
-        <div class="header-bottom">
-          <div class="header-bottom-promo">
+    <header class="site-header">
+      <a class="menu-logo">
+        <img src="img/menu-logo.svg" alt="Логотип компании" width="100" height="32">
+      </a>  
+      <nav class="site-menu">
+        <ul class="menu-list-left">
+          <li>
+            <a href="#">Каталог</a>
+          </li>
+          <li>
+            <a href="#">Доставка и оплата</a>
+          </li>
+          <li>
+            <a href="#">Отзывы</a>
+          </li>
+        </ul>
+        <ul class="menu-list-right">
+          <li>
+            <a href="#">Спецпредложения</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+          <li>
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+    </header> 
+    <main class="main-content">
+      <div class="container">
+        <section class="presentation">
+          <div class="presentation-promo">
             <h1>Авторские букеты <i>в Петербурге</i></h1>
             <p>Оригинальные свежие букеты
               с доставкой по всему городу
             </p>
-            <a href="#" class="btn btn-header">Смотреть каталог</a>
+            <a href="#" class="btn btn-promo">Смотреть каталог</a>
           </div>
-        </div>
-      </header>
-      <main class="main-content">
+        </section>
         <section class="advantages">
           <ul>
             <li class="advantags-item">
@@ -151,68 +155,70 @@
             </blockquote>
           </div>
         </section>
-        <section class="contacts">
-          <div class="contacts-map">
+      </div>
+      
+      <section class="contacts">
+        <div class="contacts-map">
+        </div>
+        <div class="contacts-info">
+          <h2>Мы ждем вас</h2>
+          <div class="contacts-item">
+            <p>Приходите к нам:</p>
+            <p>Санкт-Петербург,
+              ул. Большая Конюшенная, 19</p>
           </div>
-          <div class="contacts-info">
-            <h2>Мы ждем вас</h2>
-            <div class="contacts-item">
-              <p>Приходите к нам:</p>
-              <p>Санкт-Петербург,
-                ул. Большая Конюшенная, 19</p>
-            </div>
-            <div class="contacts-item">
-              <p>Режим работы:</p>
-              <b>Пн-Вск, с 9-00 до 20-00</b>
-            </div>
-            <div class="contacts-item">
-              <p>Позвоните нам:</p>
-              <b>+ 7 (812) 983-47-19</b>
-            </div>
-            <div class="contacts-item">
-              <p>Напишите нам:</p>
-              <p>info@botanika.ru</p>
-            </div>
+          <div class="contacts-item">
+            <p>Режим работы:</p>
+            <b>Пн-Вск, с 9-00 до 20-00</b>
           </div>
-        </section>
-      </main>
-      <footer class="site-footer">
-        <div class="footer-logo">
-          <a href="#">
-            <img src="img/menu-logo.svg" alt="Логотип компании" width="100" height="32">
-          </a>
+          <div class="contacts-item">
+            <p>Позвоните нам:</p>
+            <b>+ 7 (812) 983-47-19</b>
+          </div>
+          <div class="contacts-item">
+            <p>Напишите нам:</p>
+            <p>info@botanika.ru</p>
+          </div>
         </div>
-        <div class="footer-navigation">
-          <ul class="menu-list">
-            <li>
-              <a href="#">Каталог</a>
-            </li>
-            <li>
-              <a href="#">Доставка и оплата</a>
-            </li>
-            <li>
-              <a href="#">Отзывы</a>
-            </li>
-            <li>
-              <a href="#">Спецпредложения</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-social">
-          <a href="#" class="insta footer-insta">
-            <img src="img/insta.svg" alt="Инстаграм" width="20" height="20">
-          </a>
-          <a href="#" class="facebook footer-facebook">
-            <img src="img/facebook.svg" alt="Фейсбук" width="12" height="20">
-          </a>
-          <a href="#" class="twitter footer-twitter">
-            <img src="img/twitter.svg" alt="Твиттер" width="26" height="20">
-          </a>
-        </div>
-      </footer>
-    </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-logo">
+        <a href="#">
+          <img src="img/menu-logo.svg" alt="Логотип компании" width="100" height="32">
+        </a>
+      </div>
+      <div class="footer-navigation">
+        <ul class="menu-list">
+          <li>
+            <a href="#">Каталог</a>
+          </li>
+          <li>
+            <a href="#">Доставка и оплата</a>
+          </li>
+          <li>
+            <a href="#">Отзывы</a>
+          </li>
+          <li>
+            <a href="#">Спецпредложения</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="#" class="insta footer-insta">
+          <img src="img/insta.svg" alt="Инстаграм" width="20" height="20">
+        </a>
+        <a href="#" class="facebook footer-facebook">
+          <img src="img/facebook.svg" alt="Фейсбук" width="12" height="20">
+        </a>
+        <a href="#" class="twitter footer-twitter">
+          <img src="img/twitter.svg" alt="Твиттер" width="26" height="20">
+        </a>
+      </div>
+    </footer>
+  
   </body>
 </html>
