@@ -5,7 +5,7 @@ body {
     font-family: 'Montserrat', 'Arial', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;l, 
+    font-size: 16px;
     line-height: 20px;
     /* identical to box height */
     color: #AE7C78;
@@ -20,7 +20,7 @@ a {
     color: #AE7C78;
 }
 
-ul, li {
+ul, li, p, h1, h2, h3 {
     margin: 0;
     padding: 0;
 }
@@ -38,6 +38,7 @@ ul, li {
     min-height: 64px;
     width: 1440px;
     margin-top: 26px;
+    margin-bottom: 82px;
 }
 
 .menu-logo {
@@ -65,6 +66,177 @@ ul, li {
     margin: 0;
 }
 
-.menu-list li {
-    
+.presentation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 46px;
+}
+
+.presentation-promo {
+    width: 386px;
+    margin: 0;
+}
+
+.presentation-promo h1 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 59px;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.presentation-promo span {
+    font-style: italic;
+}
+
+.presentation-promo p {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 61px;
+}
+
+.presentation-anna {
+    margin-top: 60px;
+}
+
+.btn {
+    display: inline-block;
+    width: 285px;
+    height: 80px;
+    background: #D89999;
+    border-radius: 40px;
+    font-size: 16px;
+    line-height: 80px;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.advantages {
+    margin-bottom: 80px;
+}
+
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    list-style: none;
+    width: 1200px;
+}
+
+.advantages-item {
+    margin: 0;
+    width: 285px;
+    margin-left: 121px;
+    position: relative;
+}
+.advantages-item:first-child {
+    margin-left: 0;
+}
+
+.advantages-list li:first-child::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/Car.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 82px;
+    height: 52px;
+    left: -102px;
+}
+
+.advantages-item h3 {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.advantages-list li:nth-child(2)::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/bouquet.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 42px;
+    height: 52px;
+    left: -63px;
+}
+
+.advantages-list li:nth-child(3)::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/Group.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 58px;
+    height: 52px;
+    left: -78px;
+}
+
+.popular-products {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 794px;
+    height: 546px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.popular-products h2 {
+    margin-left: 217px;
+    width: 371px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+}
+
+.popular-products h3 {
+    width: 387px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 63px;
+    margin-bottom: 20px;
+}
+
+.popular-products p{
+    width: 387px;
+    margin-bottom: 24px;
+}
+
+.popular-products b {
+    margin-bottom: 64px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.popular-bouquet {
+    position: absolute;
+    top: 84px;
+    right: 0;
+}
+
+.arrow-left {
+    position: absolute;
+    left: 336px;
+    bottom: -8px;
+}
+
+.arrow-right {
+    position: absolute;
+    right: 336px;
+    bottom: -8px;
 }
