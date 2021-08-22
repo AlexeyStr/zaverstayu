@@ -124,7 +124,6 @@ ul, li, p, h1, h2, h3 {
     flex-wrap: wrap;
     justify-content: flex-end;
     list-style: none;
-    width: 1200px;
 }
 
 .advantages-item {
@@ -239,4 +238,211 @@ ul, li, p, h1, h2, h3 {
     position: absolute;
     right: 336px;
     bottom: -8px;
+}
+
+.catalog-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 442px;
+    margin-bottom: 80px;
+}
+
+.catalog-item {
+    width: 387px;
+    position: relative;
+    color: #FFFFFF;
+}
+
+.catalog-item h2 {
+    margin-top: 183px;
+    margin-bottom: 8px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.catalog-item p {
+    text-align: center;
+}
+
+.catalog-item:first-child::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/sammi-bouquet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 387px;
+    height: 442px;
+    z-index: -1;
+}
+
+.catalog-item:nth-child(2)::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/fresh-bouquet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 387px;
+    height: 442px;
+    z-index: -1;
+}
+
+.catalog-item:nth-child(3)::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/alyssa-bouquet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 387px;
+    height: 442px;
+    z-index: -1;
+}
+
+.catalog-item::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/Rectangle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 387px;
+    height: 442px;
+    top: 0;
+    z-index: -1;
+}
+
+.discount {
+    margin-bottom: 80px;
+    min-height: 391px;
+    color: #FFFFFF;
+    background-color:  #AE7C78;
+}
+
+.discount h2 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 59px;
+    letter-spacing: 0.02em;
+    width: 488px;
+    margin-left: 102px;
+    padding-top: 40px;
+    margin-bottom: 24px;
+}
+
+.discount p {
+    width: 387px;
+    margin-left: 102px;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.discount::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/bouquet-discont.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 590px;
+    height: 391px;
+    right: 120px;
+}
+
+.steps {
+    margin-bottom: 80px;
+}
+
+.steps h2 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 96px;
+}
+
+.steps-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.steps-item {
+    margin: 0;
+    width: 285px;
+    position: relative;
+}
+.advantages-item:first-child {
+    margin-left: 0;
+}
+
+.steps-list li:first-child::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/Order-step.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 66px;
+    height: 52px;
+    left: 110px;
+    top: -60px;
+}
+
+.steps-list li:nth-child(2)::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/Detalies-step.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 37px;
+    height: 52px;
+    left: 110px;
+    top: -60px;
+}
+
+.steps-list li:nth-child(3)::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/Payment-step.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70px;
+    height: 52px;
+    left: 110px;
+    top: -60px;
+}
+
+.steps-list li:nth-child(4)::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/Car.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 82px;
+    height: 52px;
+    left: 110px;
+    top: -60px;
+}
+
+.steps-item h3 {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.steps-item p {
+    text-align: center;
 }
