@@ -43,12 +43,7 @@ a {
     left: calc(50% - 50px);
 }
 
-.site-menu {
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.site-menu .menu-list {
+.menu-list {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -74,6 +69,15 @@ a {
 .menu-list li:nth-child(4),
 .menu-list li:nth-child(5) {
     margin-right: 89px;
+}
+
+.menu-list li:hover, .menu-list li:focus {
+    text-decoration: underline;
+}
+
+.menu-list li:active {
+    text-decoration: underline;
+    opacity: 0.5;
 }
 
 .presentation {
@@ -118,6 +122,15 @@ a {
     vertical-align: middle;
     background: #D89999;
     border-radius: 40px;
+}
+
+.btn:hover, .btn:focus {
+    background: #ff7070;
+}
+
+.btn:active {
+    background: #ff7070;
+    opacity: 0.3;
 }
 
 .advantages {
@@ -443,6 +456,14 @@ a {
     margin-bottom: 10px;
 }
 
+.social:hover, .social:focus {
+    opacity: 0.7;
+}
+
+.social:active {
+    opacity: 0.3;
+}
+
 .news-big {
     grid-column: 3 / 4;
     grid-row: 1 / 3;
@@ -585,8 +606,16 @@ a {
     list-style: none;
 }
 
-.footer-navigation a {
+.footer-menu-list a {
     color: #FFFFFF;
+}
+
+.footer-menu-list li:hover, .footer-menu-list li:focus {
+    text-decoration: underline;
+}
+
+.footer-menu-list li:active {
+    opacity: 0.5;
 }
 
 .footer-social {
